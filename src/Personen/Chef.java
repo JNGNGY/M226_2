@@ -12,7 +12,7 @@ public class Chef extends Person {
     public void print () {
         System.out.print("Chef: ");
         super.print();
-        System.out.println(" Abteilung:" + abteilung + " Ferien:" + berechneFerien(alter));
+        System.out.println(" Abteilung:" + abteilung + " Ferien:" + berechneFerien(alter) + " Woche");
     }
 
     @Override

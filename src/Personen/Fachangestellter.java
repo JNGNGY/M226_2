@@ -12,7 +12,7 @@ public class Fachangestellter extends Person {
     public void print () {
         System.out.print("Fachangestellter: ");
         super.print();
-        System.out.println(" Vorgesetzter:" + vorgesetzter.name + " Ferien:" + berechneFerien(alter));
+        System.out.println(" Vorgesetzter:" + vorgesetzter.name + " Ferien:" + berechneFerien(alter) + " Woche");
     }
 
     @Override

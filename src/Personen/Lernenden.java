@@ -12,7 +12,7 @@ public class Lernenden extends Person {
     public void print () {
         System.out.print("Lernenden: ");
         super.print();
-        System.out.println("  Lehrjahr:" + lehrjahr + " Ferien:" + berechneFerien(alter));
+        System.out.println("  Lehrjahr:" + lehrjahr + " Ferien:" + berechneFerien(alter) + " Woche");
     }
 
     @Override
