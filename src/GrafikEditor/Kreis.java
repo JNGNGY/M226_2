@@ -2,7 +2,7 @@ package GrafikEditor;
 
 import java.awt.Color;
 import java.awt.Graphics;
-public abstract class Kreis extends Figur {
+public class Kreis extends Figur {
     private int radius;
 
     public Kreis(int x, int y, int radius) {

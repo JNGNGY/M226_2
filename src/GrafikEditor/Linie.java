@@ -4,7 +4,7 @@ package GrafikEditor;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public  abstract class Linie extends Figur {
+public class Linie extends Figur {
     private int endX;
     private int endY;
 
