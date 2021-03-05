@@ -1,5 +1,10 @@
 package GrafikEditor;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import GrafikEditor.Figur;
+
 public class Gruppe {
     private List<Figur> gruppe = new ArrayList<Figur>();
 

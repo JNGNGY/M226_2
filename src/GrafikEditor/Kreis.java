@@ -1,5 +1,7 @@
 package GrafikEditor;
 
+import java.awt.Color;
+import java.awt.Graphics;
 public abstract class Kreis extends Figur {
     private int radius;
 

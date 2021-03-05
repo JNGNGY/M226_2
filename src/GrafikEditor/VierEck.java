@@ -1,5 +1,8 @@
 package GrafikEditor;
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 public abstract class VierEck extends Figur {
     private int breite;
     private int hoehe;
