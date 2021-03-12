@@ -4,7 +4,7 @@ package GrafikEditor;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Linie extends Figur {
+public final class Linie extends Figur {
     private int endX;
     private int endY;
 
@@ -47,5 +47,12 @@ public class Linie extends Figur {
         y += deltaY;
         endX += deltaX;
         endY += deltaY;
+    }
+
+    @Override
+    public String generateSavingString(){
+        return this.getClass().getSimpleName() + ";" +
+                this.getX() + ";" +
+                this.getY();
     }
 }

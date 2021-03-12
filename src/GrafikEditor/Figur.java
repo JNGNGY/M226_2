@@ -41,4 +41,6 @@ public abstract class Figur {
     }
 
     public abstract void draw(Graphics g);
+
+    public abstract String generateSavingString();
 }

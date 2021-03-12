@@ -3,7 +3,7 @@ package GrafikEditor;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class VierEck extends Figur {
+public final class VierEck extends Figur {
     private int breite;
     private int hoehe;
 
@@ -43,5 +43,12 @@ public class VierEck extends Figur {
         } else {
             g.drawRect(x, y, breite, hoehe);
         }
+    }
+
+    @Override
+    public String generateSavingString(){
+        return this.getClass().getSimpleName() + ";" +
+                this.getX() + ";" +
+                this.getY();
     }
 }

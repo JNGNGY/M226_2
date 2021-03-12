@@ -23,9 +23,12 @@ public class Main {
 
         Gruppe gruppe = new Gruppe();
         gruppe.addFigur(eineLinie);
+        gruppe.addFigur(kleinerKreis);
 
         Zeichnung zeichnung = new Zeichnung(figuren);
         zeichnung.hinzufuegen(gruppe);
         display.setZeichnung(zeichnung);
+
+        new FigurSaver();
     }
 }

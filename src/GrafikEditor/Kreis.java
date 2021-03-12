@@ -2,7 +2,7 @@ package GrafikEditor;
 
 import java.awt.Color;
 import java.awt.Graphics;
-public class Kreis extends Figur {
+public final class Kreis extends Figur {
     private int radius;
 
     public Kreis(int x, int y, int radius) {
@@ -32,5 +32,12 @@ public class Kreis extends Figur {
         } else {
             g.drawOval(x - radius, y - radius, diameter, diameter);
         }
+    }
+
+    @Override
+    public String generateSavingString(){
+        return this.getClass().getSimpleName() + ";" +
+                this.getX() + ";" +
+                this.getY();
     }
 }
