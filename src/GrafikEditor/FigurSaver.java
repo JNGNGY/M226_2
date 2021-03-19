@@ -22,21 +22,21 @@ public final class FigurSaver {
         }
     }
 
-    public void save(Figur[] figures, File file){
-        try
-                (BufferedWriter myWriter = new BufferedWriter(new FileWriter(file, false)))
-        {
-            for (int i = 0; i < figures.length; i++) {
-                try{
-                    myWriter.write(figures[i].generateSavingString());
-                    myWriter.write("\n");
-                }catch (Exception e){
-                    System.out.println("Figur konnte nicht gespeichert werden. (" + figures[i].toString() + ")");
-                }
-            }
-        }catch(IOException e){
-            System.out.println("Figuren konnten nicht gespeichert werden:\n" + e.getMessage());
-        }
-    }
+   // public void save(Figur[] figures, File file){
+     //   try
+       //         (BufferedWriter myWriter = new BufferedWriter(new FileWriter(file, false)))
+        //{
+          //  for (int i = 0; i < figures.length; i++) {
+            //    try{
+              //      myWriter.write(figures[i].generateSavingString());
+                //    myWriter.write("\n");
+              //  }catch (Exception e){
+             //       System.out.println("Figur konnte nicht gespeichert werden. (" + figures[i].toString() + ")");
+            //    }
+           // }
+       // }catch(IOException e){
+         //   System.out.println("Figuren konnten nicht gespeichert werden:\n" + e.getMessage());
+       // }
+    //}
 }
 

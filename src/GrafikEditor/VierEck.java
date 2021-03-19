@@ -7,12 +7,6 @@ public final class VierEck extends Figur {
     private int breite;
     private int hoehe;
 
-    public VierEck(int x, int y, int breite, int hoehe) {
-        super(x, y, Color.BLACK, false);
-        this.setBreite(breite);
-        this.setHoehe(hoehe);
-    }
-
     public VierEck(int x, int y, int breite, int hoehe, Color farbe, boolean ausgefuellt) {
         super(x, y, farbe, ausgefuellt);
         this.setBreite(breite);

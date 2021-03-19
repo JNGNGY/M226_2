@@ -1,6 +1,7 @@
 package GrafikEditor;
 
 import java.awt.Color;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,9 +14,9 @@ public class Main {
     private static final Display display = new Display();
 
     public static void main(String[] args) {
-        Figur langesVierEck = new VierEck(25, 50, 100, 20, Color.RED, false);
+        Figur langesVierEck = new VierEck(25, 50, 100, 20, Color.RED, true);
         Figur kleinerKreis = new Kreis(120, 140, 15, Color.BLUE, true);
-        Figur eineLinie = new Linie(120, 40, 200, 200, Color.GREEN);
+        Figur eineLinie = new Linie(120, 40, 200, 200, Color.GREEN, 8);
         List<Figur> figuren = new ArrayList<Figur>();
 
         figuren.add(langesVierEck);
@@ -29,6 +30,7 @@ public class Main {
         zeichnung.hinzufuegen(gruppe);
         display.setZeichnung(zeichnung);
 
-        new FigurSaver();
+        FigurSaver figurSave = new FigurSaver();
+        figurSave.save(kleinerKreis, new File("hey.txt"));
     }
 }
