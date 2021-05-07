@@ -13,6 +13,12 @@ public final class VierEck extends Figur {
         this.setHoehe(hoehe);
     }
 
+    public VierEck(int x, int y, int breite, int hoehe) {
+        super(x, y);
+        this.setBreite(breite);
+        this.setHoehe(hoehe);
+    }
+
     public int getBreite() {
         return breite;
     }

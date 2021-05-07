@@ -15,6 +15,11 @@ public abstract class Figur {
         this.ausgefuellt = ausgefuellt;
     }
 
+    public Figur(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public int getX() {
         return x;
     }

@@ -32,5 +32,12 @@ public class Main {
 
         FigurSaver figurSave = new FigurSaver();
         figurSave.save(kleinerKreis, new File("hey.txt"));
+
+        FigurFileDAO dao = new FigurFileDAO();
+        FigurParser pp = new FigurParser(dao);
+        List<Figur> figuren1 = pp.parse();
+        System.out.println(figuren1);
+        dao.close();
+
     }
 }

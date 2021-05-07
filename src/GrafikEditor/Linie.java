@@ -14,9 +14,11 @@ public final class Linie extends Figur {
         this.setEndY(endY);
     }
 
-    //public int setWidth(int width){
-   //     this.width = width;
-    //}
+    public Linie(int x, int y, int endx, int endy) {
+        super(x, y);
+        this.setEndX(endX);
+        this.setEndY(endY);
+    }
 
     public void setEndX(int endX) {
         this.endX = endX;
