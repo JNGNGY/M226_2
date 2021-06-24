@@ -31,7 +31,7 @@ public class Main {
         display.setZeichnung(zeichnung);
 
         FigurSaver figurSave = new FigurSaver();
-        figurSave.save(kleinerKreis, new File("hey.txt"));
+        figurSave.save(langesVierEck, new File("hey.txt"));
 
         FigurFileDAO dao = new FigurFileDAO();
         FigurParser pp = new FigurParser(dao);
